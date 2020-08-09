@@ -2,19 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 
-import { DocumentHead, StickyNav, SubscribeOverlay, SubscribeSuccess } from '.'
-import { BodyClass } from './helpers'
+import { DocumentHead, StickyNav, SubscribeOverlay, SubscribeSuccess } from 'gatsby-theme-try-ghost/src/components/common'
+import { BodyClass } from 'gatsby-theme-try-ghost/src/components/common/helpers'
 
-import useOptions from '../../utils/use-options'
-import { useLang, get } from '../../utils/use-lang'
+import useOptions from 'gatsby-theme-try-ghost/src/utils/use-options'
+import { useLang, get } from 'gatsby-theme-try-ghost/src/utils/use-lang'
 
 // Styles
-import '../../styles/screen.css'
-import '../../styles/fluid.css'
-import '../../styles/dark-mode.css'
-import '../../styles/pagination.css'
-import '../../styles/prism.css'
-import '../../styles/toc.css'
+import 'gatsby-theme-try-ghost/src/styles/screen.css'
+import 'gatsby-theme-try-ghost/src/styles/fluid.css'
+import 'gatsby-theme-try-ghost/src/styles/dark-mode.css'
+import 'gatsby-theme-try-ghost/src/styles/pagination.css'
+import 'gatsby-theme-try-ghost/src/styles/prism.css'
+import 'gatsby-theme-try-ghost/src/styles/toc.css'
 
 /**
 * Main layout component
@@ -115,7 +115,7 @@ DefaultLayout.propTypes = {
 const DefaultLayoutSettingsQuery = props => (
     <StaticQuery
         query={graphql`
-            query GhostSettings {
+            query GhostSettingsShadow {
                 allGhostSettings {
                     edges {
                         node {
